@@ -1,5 +1,50 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
+import styled from "styled-components";
+import avatarImg from "../../public/images/avatar.svg";
+
+const Container = styled.main`
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: calc(100vh - 5rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const Content = styled.section`
+  max-width: 600px;
+
+  > span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    margin-top: 2.5rem;
+
+    span {
+      color: var(--cyan-500);
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-top: 1.5rem;
+
+    span {
+      color: var(--cyan-500);
+      font-weight: bold;
+    }
+  }
+`;
 
 const Home: NextPage = () => {
   return (
@@ -8,7 +53,20 @@ const Home: NextPage = () => {
         <title>Home</title>
       </Head>
 
-      <h1>hello next</h1>
+      <Container>
+        <Content>
+          <span>Hey, welcome</span>
+          <h1>
+            News about the <span>React </span>world.
+          </h1>
+          <p>
+            Get access to all the publications
+            <br />
+            <span>for $9.90 month</span>
+          </p>
+        </Content>
+        <Image src={avatarImg} alt="Girl coding" />
+      </Container>
     </>
   );
 };
