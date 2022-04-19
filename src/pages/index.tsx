@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styled from "styled-components";
 import avatarImg from "../../public/images/avatar.svg";
+import { SubscribeButton } from "../components/SubscribeButton";
 
 const Container = styled.main`
   max-width: 1120px;
@@ -44,6 +45,10 @@ const Content = styled.section`
       font-weight: bold;
     }
   }
+
+  button {
+    margin-top: 2.5rem;
+  }
 `;
 
 const Home: NextPage = () => {
@@ -64,6 +69,7 @@ const Home: NextPage = () => {
             <br />
             <span>for $9.90 month</span>
           </p>
+          <SubscribeButton />
         </Content>
         <Image src={avatarImg} alt="Girl coding" />
       </Container>
