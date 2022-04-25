@@ -1,0 +1,3 @@
+import { ONE_DAY_IN_SECONDS } from "./constants";
+
+export const SUBSCRIPTION_REVALIDATION_TIME_VALUE = ONE_DAY_IN_SECONDS;
