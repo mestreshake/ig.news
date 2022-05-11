@@ -4,6 +4,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  images: {
+    domains: ["images.prismic.io"],
+  },
 };
 
 module.exports = nextConfig;

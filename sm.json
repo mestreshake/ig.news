@@ -1,7 +1,6 @@
 {
   "_latest": "0.3.7",
-  "apiEndpoint": "https://ignewsmestreshake.prismic.io/api/v2",
-  "libraries": [
-    "@/slices"
-  ]
+  "apiEndpoint": "https://helloprismicmestreshake.prismic.io/api/v2",
+  "libraries": ["@/slices"],
+  "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
 }
