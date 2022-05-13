@@ -12,22 +12,24 @@
           "placeholder": ""
         }
       },
-      "Text": {
+      "title": {
         "type": "StructuredText",
         "config": {
-          "label": "Text",
+          "label": "Title",
           "placeholder": "",
           "allowTargetBlank": true,
           "single": "heading1"
         }
       },
-      "Content": {
-        "type": "StructuredText",
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
         "config": {
-          "label": "Content",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "choices": {
+            "intro_text_image": {
+              "type": "SharedSlice"
+            }
+          }
         }
       }
     }

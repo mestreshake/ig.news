@@ -1,5 +1,6 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import { createClient } from "../../services/prismicio";
 import { Container, PostList } from "./styles";
 
@@ -23,11 +24,13 @@ export default function Posts({ posts }: PostsProps) {
       <Container>
         <PostList>
           {posts.map((post): any => (
-            <a key={post.slug} href="#">
-              <time>{post.updatedAt}</time>
-              <strong>{post.title}</strong>
-              <p>{post.excerpt}</p>
-            </a>
+            <Link key={post.slug} href={`/posts/${post.slug}`}>
+              <a>
+                <time>{post.updatedAt}</time>
+                <strong>{post.title}</strong>
+                <p>{post.excerpt}</p>
+              </a>
+            </Link>
           ))}
         </PostList>
       </Container>

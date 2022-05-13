@@ -1,19 +1,12 @@
 {
-  "id": "b8b75770-1351-4bf3-99bc-2bbdb62567c4",
-  "uid": "similique-repellendus-nihil",
+  "id": "d7c401a6-e48b-47c7-a85c-89e5dcda5dfe",
+  "uid": "aperiam-accusantium-corrupti",
   "type": "post",
   "data": {
-    "Text": [
+    "title": [
       {
         "type": "heading1",
-        "text": "Incentivize virtual eyeballs",
-        "spans": []
-      }
-    ],
-    "Content": [
-      {
-        "type": "paragraph",
-        "text": "Est sunt eu irure anim enim exercitation sint sit qui culpa laboris. Fugiat aute do esse sint. Ullamco esse cupidatat est anim.",
+        "text": "Engineer real-time synergies",
         "spans": []
       }
     ]

@@ -1,0 +1,9 @@
+import MyComponent from '../../../../slices/IntroTextImage';
+
+export default {
+  title: 'slices/IntroTextImage'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"intro_text_image","items":[{"content":[{"type":"paragraph","text":"Qui cillum cupidatat exercitation commodo nulla quis cupidatat non pariatur irure tempor id Lorem. Aute velit anim dolor nisi.","spans":[]}]},{"content":[{"type":"paragraph","text":"Et sit deserunt duis in do culpa ut pariatur duis qui cillum enim. Commodo ipsum ipsum commodo nulla enim quis in.","spans":[]}]}],"primary":{"banner":{"dimensions":{"width":1366,"height":300},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=1366&h=300&fit=crop"}},"id":"_Default"}} />
+_Default.storyName = 'Default'

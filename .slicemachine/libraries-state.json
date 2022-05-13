@@ -1,5 +1,101 @@
 {
   "slices": {
-    "components": {}
+    "components": {
+      "intro_text_image": {
+        "library": "slices",
+        "id": "intro_text_image",
+        "name": "IntroTextImage",
+        "description": "IntroTextImage",
+        "model": {
+          "id": "intro_text_image",
+          "type": "SharedSlice",
+          "name": "IntroTextImage",
+          "description": "IntroTextImage",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "IntroTextImage",
+              "primary": {
+                "banner": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Banner",
+                    "constraint": {
+                      "width": 1366,
+                      "height": 300
+                    },
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {
+                "content": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Content",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "intro_text_image",
+            "items": [
+              {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Qui cillum cupidatat exercitation commodo nulla quis cupidatat non pariatur irure tempor id Lorem. Aute velit anim dolor nisi.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Et sit deserunt duis in do culpa ut pariatur duis qui cillum enim. Commodo ipsum ipsum commodo nulla enim quis in.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "banner": {
+                "dimensions": {
+                  "width": 1366,
+                  "height": 300
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=1366&h=300&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/home/icts/estudos/ign/ig.news/.slicemachine/assets/slices/IntroTextImage/default/preview.png",
+            "width": 800,
+            "height": 65
+          }
+        }
+      }
+    }
   }
 }
