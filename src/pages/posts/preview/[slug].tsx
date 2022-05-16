@@ -1,5 +1,5 @@
 import { SliceLike, SliceZone, SliceZoneLike } from "@prismicio/react";
-import { GetStaticProps } from "next";
+import { GetStaticPaths, GetStaticProps } from "next";
 import { getSession, useSession } from "next-auth/react";
 import { createClient } from "../../../services/prismicio";
 import { components } from "../../../../slices";
@@ -8,6 +8,7 @@ import { Container, Content, ContinueReading } from "../postStyle";
 import Link from "next/link";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import { POST_REFRESH_TIME } from "../../../constants/constants";
 
 interface PostPreviewProps {
   post: {
@@ -53,7 +54,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
   );
 }
 
-export const getStaticPaths = () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [],
     fallback: "blocking",
@@ -80,5 +81,6 @@ export const getStaticProps: GetStaticProps = async ({ params }: any) => {
 
   return {
     props: { post },
+    redirect: POST_REFRESH_TIME,
   };
 };
