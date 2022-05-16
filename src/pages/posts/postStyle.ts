@@ -22,3 +22,22 @@ export const Content = styled.article`
     margin-top: 1.5rem;
   }
 `;
+
+export const ContinueReading = styled.div`
+  padding: 2rem;
+  text-align: center;
+  background: var(--gray-850);
+  border-radius: 100px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 4rem 0 2rem;
+
+  a {
+    color: var(--yellow-500);
+    margin-left: 0.5rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;

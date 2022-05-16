@@ -44,10 +44,12 @@ export default NextAuth({
         return {
           ...session.session,
           activeSubscription: userActiveSubscription,
+          ...session,
         };
       } catch {
         return {
           ...session.session,
+          ...session,
           activeSubscription: null,
         };
       }
